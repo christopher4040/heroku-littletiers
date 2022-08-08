@@ -1,0 +1,30 @@
+{
+  "name": "heroku-littletiers",
+  "version": "1.0.0",
+  "description": "Little tiers app deployed on Heroku",
+  "main": "http_server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "npm install",
+    "start": "node http_server.js"
+  },
+  "author": "christopherpr101@gmail.com",
+  "license": "MIT",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.1",
+    "faker": "^5.5.3",
+    "lowdb": "^1.0.0"
+  },
+  "engines": {
+    "node": "16.x"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/christopher4040/heroku-littletiers.git"
+  },
+  "bugs": {
+    "url": "https://github.com/christopher4040/heroku-littletiers/issues"
+  },
+  "homepage": "https://github.com/christopher4040/heroku-littletiers#readme"
+}
