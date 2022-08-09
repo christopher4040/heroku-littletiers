@@ -1,0 +1,74 @@
+{
+  "accounts": [
+    {
+      "accountNumber": "21515492",
+      "accountName": "Money Market Account",
+      "routingNumber": "277122973",
+      "amount": 125.53,
+      "dateCreated": "2022-08-09T00:54:07.738Z"
+    },
+    {
+      "accountNumber": "76466589",
+      "accountName": "Savings Account",
+      "routingNumber": "549668152",
+      "amount": 21.87,
+      "dateCreated": "2022-08-09T00:54:07.739Z"
+    },
+    {
+      "accountNumber": "85753392",
+      "accountName": "Money Market Account",
+      "routingNumber": "865088173",
+      "amount": 116.4,
+      "dateCreated": "2022-08-09T00:54:07.742Z"
+    },
+    {
+      "accountNumber": "14313582",
+      "accountName": "Investment Account",
+      "routingNumber": "653197140",
+      "amount": 565.37,
+      "dateCreated": "2022-08-09T00:54:07.741Z"
+    },
+    {
+      "accountNumber": "88162415",
+      "accountName": "Auto Loan Account",
+      "routingNumber": "747310150",
+      "amount": 80.6,
+      "dateCreated": "2022-08-09T00:54:07.740Z"
+    },
+    {
+      "accountNumber": "63960470",
+      "accountName": "Checking Account",
+      "routingNumber": "073423245",
+      "amount": 25.59,
+      "dateCreated": "2022-08-09T00:54:07.740Z"
+    },
+    {
+      "accountNumber": "72755000",
+      "accountName": "Checking Account",
+      "routingNumber": "906958162",
+      "amount": 312.19,
+      "dateCreated": "2022-08-09T00:54:07.740Z"
+    },
+    {
+      "accountNumber": "94988503",
+      "accountName": "Home Loan Account",
+      "routingNumber": "769025067",
+      "amount": 696.45,
+      "dateCreated": "2022-08-09T00:54:07.741Z"
+    },
+    {
+      "accountNumber": "46999928",
+      "accountName": "Checking Account",
+      "routingNumber": "182923678",
+      "amount": 991.73,
+      "dateCreated": "2022-08-09T00:54:07.742Z"
+    },
+    {
+      "accountNumber": "86752856",
+      "accountName": "Investment Account",
+      "routingNumber": "423239500",
+      "amount": 595.63,
+      "dateCreated": "2022-08-09T00:54:07.742Z"
+    }
+  ]
+}

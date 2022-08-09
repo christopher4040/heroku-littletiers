@@ -3,7 +3,9 @@ const app = express();
 const low = require('lowdb');
 const fs = require('lowdb/adapters/FileSync');
 const adapter = new fs('db.json');
+const accAdapter = new fs('accountsDB.json');
 const db = low(adapter);
+const accDB = low(accAdapter)
 const cors = require('cors');
 
 // allow cross-origin resource sharing (CORS)
@@ -20,6 +22,7 @@ app.use(express.static('public'));
 
 // init the data store
 db.defaults({ users: [] }).write();
+accDB.defaults({ accounts: [] }).write();
 
 let port = process.env.PORT || 3000;
 
@@ -46,6 +49,24 @@ app.post('/add', function (req, res) {
     db.get('users').push(user).write();
     console.log(db.get('users').value());
     res.send(db.get('users').value());
+});
+
+app.get('/accounts', function (req, res) {
+  res.send(accDB.get('accounts').value());
+});
+
+// add 10 accounts
+app.post('/accounts', function (req, res) {
+  var account = {
+      'accountNumber': req.body.accountNumber,
+      'accountName': req.body.accountName,
+      'routingNumber': req.body.routingNumber,
+      'amount': req.body.amount,
+      'dateCreated': req.body.dateCreated,
+  }
+  accDB.get('accounts').push(account).write();
+  console.log(accDB.get('accounts').value());
+  res.send(`Account ${account.accountNumber} has been created succesfully!`);
 });
 
 // start server
